@@ -4,65 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Latihan 2</title>
 </head>
 <body>
+    <!--Ini adalah section header-->
     <header>
-        <!--ini adalah block header-->
+        <h1>Belajar Membuat Layout dengan HTML dan CSS</h1>
     </header>
-    <section>
-        <!--ini adalah section awal-->
-        <h1 style="text-align: center;"> &#129419--BIODATA--&#129419</h1>
-        <p>
-            
-        </p>
-        <img src="img/yulianas.png" alt="" style="width: 25%; margin: 20px auto; display: block;" />
-        <table border="1" cellspacing="1" cellpadding="5" style="border: 1px black; margin: 1px auto;">
-            
-            <tr>
-                <th>Nama</th>
-                <td>=</td>
-                <td>Yuliana Sventy Yasmine </td>
-            </tr>
-            <tr>
-                <th>Nim</th>
-                <td>=</td>
-                <td>2100924</td>
-            </tr>
-            <tr>
-                <th>Prodi</th>
-                <td>=</td>
-                <td>Pendidikan Sistem dan Teknologi Informasi</td>
-            </tr>
-            <tr>
-                <th>Tempat,tanggal lahir</th>
-                <td>=</td>
-                <td>Purwakarta,17 Juli 2003 (&#9803)</td>
-            </tr>
-            <tr> 
-                <th>Alamat</th>
-                <td>=</td>
-                <td>Perum Dian Anyar 2, Ciseureuh, Purwakarta</td>
-            </tr>
-            <tr>
-                <th>Hobi</th>
-                <td>=</td>
-                <td>Bermain badminton, menari, menggambar</td>
-            </tr>
-            <tr>
-                <th>My Instagram</th>
-                <td>=</td>
-                <td><a href="https://www.instagram.com/yulianasvntyy/" target="_blank"> Click here!!</a></td>
-            </tr>
-        </table>
-        <p style="text-align: center;">Salam Kenal Semuanya!!</p>
-    </section>
-    <div>
+    <!--Ini adalah navigasi menu-->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+    <!--Ini adalah container-->
+    <div id="container">
+        <section class="kiri">
+            <div class="content">
+                <h2> Judul Berita</h2>
+                <p>
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quis ducimus sequi minus, voluptate assumenda expedita quidem officia neque laboriosam quo animi ratione accusantium laborum et iusto debitis sed quas.
+                </p>
+                <button>Read More...</button>
+
+            </div>
+            <div class="content">
+                <h2>Judul Berita</h2>
+                <p>
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quis ducimus sequi minus, voluptate assumenda expedita quidem officia neque laboriosam quo animi ratione accusantium laborum et iusto debitis sed quas.
+                </p>
+                <button>Read More...</button>
+
+            </div>
+        </section>
+        <section class="kanan">
+            <div>
+            <h3>CATEGORY</h3>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Bootsrup</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">MYSQL</a></li>
+                <li><a href="#">Laravel</a></li>
+        </div>
+        </section>
 
     </div>
+    <!--Ini adalah footer-->
     <footer>
-        <!-- ini adalah block footer-->
+        <h3>
+            Copyright PSTI 2022
+        </h3>
     </footer>
 </body>
 </html>
