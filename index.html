@@ -4,63 +4,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Latihan 2</title>
+    <meta name="author" content="Yuliana Sventy Yasmine">
+    <title>WireFrame</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
+
 <body>
-    <!--Ini adalah section header-->
+    <!--ini navbar-->
     <header>
-        <h1>Belajar Membuat Layout dengan HTML dan CSS</h1>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Indonesia Menari &#128131;</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">PRODUCT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PORTOFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!--Ini adalah navigasi menu-->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-
-    </nav>
-    <!--Ini adalah container-->
-    <div id="container">
-        <section class="kiri">
-            <div class="content">
-                <h2> Judul Berita</h2>
-                <p>
-                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quis ducimus sequi minus, voluptate assumenda expedita quidem officia neque laboriosam quo animi ratione accusantium laborum et iusto debitis sed quas.
-                </p>
-                <button>Read More...</button>
-
+    <!--ini container 1-->
+    <div class="container pt-4 position-relative">
+        <div class="contentSatu">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Help</li>
+                  <li class="breadcrumb-item active" aria-current="page">Support</li>
+                </ol>
+              </nav>
+              <div class="content1">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content text-lg-start">
+                    <h1><span>Mengenal Tarian Yang Ada Di Indonesia</span></h1>
+                    <p>
+                        Tarian Indonesia mencerminkan kekayaan dan keanekaragaman suku bangsa dan budaya Indonesia. 
+                        Terdapat lebih dari 700 suku bangsa di Indonesia: dapat terlihat dari akar budaya bangsa Austronesia dan Melanesia, 
+                        dipengaruhi oleh berbagai budaya dari negeri tetangga di Asia bahkan pengaruh barat yang diserap melalui kolonialisasi. 
+                        Setiap suku bangsa di Indonesia memiliki berbagai tarian khasnya sendiri; Di Indonesia terdapat lebih dari 3000 tarian asli Indonesia. 
+                        Tradisi kuno tarian dan drama dilestarikan di berbagai sanggar dan sekolah seni tari 
+                        yang dilindungi oleh pihak keraton atau akademi seni yang dijalankan pemerintah.
+                    </p>
+                    <a href="https://id.wikipedia.org/wiki/Tarian_Indonesia" target="_blank"><button type="button" class="btn btn-dark">BUTTON</button>
+                    </a>
+                </div>
+               
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="img/Tari-Tradisional.jpg" style="width: 100%;">
+                </div>
             </div>
-            <div class="content">
-                <h2>Judul Berita</h2>
-                <p>
-                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quis ducimus sequi minus, voluptate assumenda expedita quidem officia neque laboriosam quo animi ratione accusantium laborum et iusto debitis sed quas.
-                </p>
-                <button>Read More...</button>
-
-            </div>
-        </section>
-        <section class="kanan">
-            <div>
-            <h3>CATEGORY</h3>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">Bootsrup</a></li>
-                <li><a href="#">PHP</a></li>
-                <li><a href="#">MYSQL</a></li>
-                <li><a href="#">Laravel</a></li>
         </div>
-        </section>
-
     </div>
-    <!--Ini adalah footer-->
-    <footer>
-        <h3>
-            Copyright PSTI 2022
-        </h3>
-    </footer>
+    <!--ini container 2-->
+    <div class="container pt-4">
+        <div class="contentDua">
+            <div class="container text-center">
+                <div class="row row-cols-lg-4">
+                    <!--card 1-->
+                    <div class="col">
+                        <div class="p-3">
+                            <div class="card mb-0 border-0">
+                                <img src="img/tarian sajojo papua.jpg" style="width: 100%" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tari sajojo papua</h5>
+                                    <p class="card-text">Tari Sajojo adalah tarian tradisional yang berasal dari Papua yang juga populer di wilayah nusantara. 
+                                        Sebagai sebuah tarian pergaulan</p>
+                                        <a href="https://youtu.be/EEn5I4ApH_M" target="_blank"><button type="button" class="btn btn-primary">PLAY</button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--card 2-->
+                    <div class="col">
+                        <div class="p-3">
+                            <div class="card border-0">
+                                <img src="img/Tari piring.jpeg" style="width: 100%" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tari piring</h5>
+                                    <p class="card-text">Tari piring adalah tarian tradisional Minangkabau yang menampilkan atraksi menggunakan atribut piring. 
+                                        Secara tradisional tari ini berasal dari Solok, Sumatra Barat.</p>
+                                        <a href="https://youtu.be/1O_OYwnV6iw" target="_blank"><button type="button" class="btn btn-primary">PLAY</button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 3-->
+                    <div class="col">
+                        <div class="p-3">
+                            <div class="card border-0">
+                                <img src="img/Tari topeng.jpg" style="width: 109%" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tari topeng betawi</h5>
+                                    <p class="card-text">Tari Topeng Betawi merupakan tarian yang biasanya dibawakan saat pementasan teater rakyat Topeng Betawi, 
+                                        bersamaan dengan musik, nyanyian, bebodoran (lawak), dan lakon (drama).</p>
+                                        <a href="https://youtu.be/BbX60C0E0P4" target="_blank"><button type="button" class="btn btn-primary">PLAY</button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 4-->
+                    <div class="col">
+                        <div class="p-3">
+                            <div class="card border-0">
+                                <img src="img/Tari dayak.jpeg" style="width: 100%" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tari dayak</h5>
+                                    <p class="card-text">Tari Dayak adalah tari tradisional masyarakat Dayak yang berhubungan 
+                                        dengan latar belakang budaya yang masih terpelihara di antara sub suku bangsa Dayak secara umum.</p>
+                                        <a href="https://youtu.be/QZO20-KavyA" targe="_blank"><button type="button" class="btn btn-primary">PLAY</button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:90; text-align: center"; margin: 5% auto>
+
+    <!--ini container 3-->
+    <div class="container pt-4">
+        <div class="contentTiga">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content text-lg-start">
+                    <h2><span> Mari Lestarikan & Kembangkan Tarian Indonesia </span></h2>
+                    <p>
+                        Sebagai generasi penerus, sudah seharusnya kita ikut melestarikan dan mengembangkan seni tari.
+                        Apalagi, Indonesia memiliki beragam khazanah kebudayaan. 
+                        Ada ribuan suku bangsa dan kesenian yang dilahirkan.
+                    </p>
+                    <a href="https://edukasi.okezone.com/read/2022/02/16/624/2548062/bagaimana-cara-melestarikan-dan-mengembangkan-tari-yang-ada-di-indonesia"
+                        target="_blank">
+                        <button type="button" class="btn btn-dark">Click</button>
+                    </a>
+                </div>
+               
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="img/Tari nusantara.jpg" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+    
+                    <p>&copy; Yuliana Sventyy</a> 2100924 </p>
+                    
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
 </html>
